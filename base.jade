@@ -1,0 +1,49 @@
+html(lang="zh-cn")
+ head
+  meta(http-equiv="content-type", content="text/html; charset=utf-8")
+  meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", name="viewport")
+  meta(content="yes", name="apple-mobile-web-app-capable")
+  meta(content="black-translucent", name="apple-mobile-web-app-status-bar-style")
+  meta(content="telephone=no", name="format-detection")
+  meta(name="description", content="")
+  meta(name="keywords", content="")
+  link(rel='alternate', type='application/rss+xml', title='atom 1.0', href='/feed')
+  load("jquery#1.10.2, /template/style/style.css,/template/style/font-awesome.min.css")
+
+  if not has('favicon.icon')
+    link(rel="shortcut icon", href="/favicon.ico")
+
+  title
+    block title
+      site.title
+
+  body#windsays
+    #top
+      .menu
+        ul
+          li
+            a(href="/") Home
+          li
+            a(href="/archive") Archive
+      i.fa.fa-search.searchicon
+      form(id="searchform", method="get", action="/")
+        input(type="text", placeholder="Enter to search",  name="s" ,id="s" ,size="12")
+  #site
+    #banner
+      .blogtitle
+        h1
+          a(href="/") {{ site.title or 'site.title'}}
+        h3
+    #main
+      .content
+        {% block content %}
+        {% endblock %}
+      #footer
+        p Here in the silence I wait
+        script
+            jQuery(function($){
+              $(".searchicon").click(function(){
+                $("#searchform").toggle(200);
+                $("#s").focus();
+              });
+              })

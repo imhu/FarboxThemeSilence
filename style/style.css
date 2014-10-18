@@ -1,0 +1,495 @@
+/*
+Theme Name: Silence
+Theme URI: http://www.windsays.com/
+Author: Windy Liu
+Author URI: http://www.windsays.com/
+Description: Designed by Windy Liu
+Version: 1.8.3
+Details:  
+
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 15px;
+	font-size: 100%;
+	vertical-align: baseline;
+	word-wrap: break-word;
+	font-family: "STHeiti Light","Microsoft YaHei","Microsoft JhengHei",STHeiti,MingLiu;
+}
+body {
+	line-height: 2;
+	background: url(../images/bg@2560.jpg) center center fixed;
+}
+/* for 1920px or less */
+@media screen and (max-width:1920px) {
+	body{
+	background: url(../images/bg@1920.jpg) center center fixed;
+	}
+}
+/* for 1440px or less */
+@media screen and (max-width:1440px) {
+	body{
+	background: url(../images/bg@1440.jpg) center center fixed;
+	}
+}
+/* for 1366px or less */
+@media screen and (max-width:1366px) {
+	body{
+	background: url(../images/bg@1366.jpg) center center fixed;
+	}
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+*:focus {
+    outline: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: rgba(0,0,0,0.9);
+
+}
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+ol {
+	list-style-type: decimal;
+	margin: 20px 10px;
+}
+ol li{
+	line-height: 2em;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1em;
+}
+html {
+	overflow-y: scroll;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+a:focus {
+	outline: thin dotted;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+hr {
+
+	background: rgba(0,0,0,0.1);
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin-bottom: 1.714285714rem;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+strong {
+	color: rgba(0,0,0,0.7);
+	font-style: bold;
+	text-decoration: none;
+}
+
+ul li {
+	list-style:none;
+}
+
+.clear {
+	clear: both;
+}
+.container {
+	position: relative;
+}
+#site {
+	padding: 0;
+	overflow: hidden;
+	margin: 100px auto;
+	width: 780px;
+}
+.site {
+	width: 100%;
+}
+.content {
+	margin: 0;
+}
+
+#main {
+	background: #e1f0df;
+}
+#banner {
+	margin-top: 0;
+	padding: 60px 20px;
+	overflow: hidden;
+	text-align: center;
+	overflow: hidden;
+	background: url(../images/bg-blur@2560.jpg) center center fixed;
+}
+/* for 1920px or less */
+@media screen and (max-width:1920px) {
+	#banner{
+	background: url(../images/bg-blur@1920.jpg) center center fixed;
+	}
+}
+@media screen and (max-width:1440px) {
+	#banner{
+	background: url(../images/bg-blur@1440.jpg) center center fixed;
+	}
+}
+@media screen and (max-width:1366px) {
+	#banner{
+	background: url(../images/bg-blur@1366.jpg) center center fixed;
+	}
+}
+.blogtitle {
+	padding: 16px 70px;
+	text-align: center;
+}
+.blogtitle a{
+	color: #FFF;
+	font-size: 60px;
+	font-weight: lighter;
+	transition: 0.5s all ease-in-out;
+}
+
+/*H3动画*/
+#banner h3 {
+	color: #FFF;
+	color: rgba(255,255,255,0.9);
+	font-size: 15px;
+	font-weight: lighter;
+	letter-spacing: 4px;
+}
+
+/* Sidebar */
+
+#top {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: #000;
+	line-height: 0;
+	background: rgba(0,0,0,.7);
+}
+.menu {
+	display: inline-block;
+}
+.menu ul{
+	line-height: 0;
+}
+.menu li{
+	list-style:none;
+	text-align: left;
+	padding-left: 10px;
+	line-height: 0;
+	display: inline-block;
+}
+.menu li a{
+	font-family: "Microsoft YaHei","Microsoft JhengHei","STHeiti Light",STHeiti,MingLiu;
+	font-weight: lighter;
+	white-space: nowrap;
+	display: inline-block;
+	text-transform: uppercase;
+	color: #CCC;
+	font-size: 12px;
+	padding: 5px 8px;
+	line-height: 16px;
+	margin: 0;
+}
+
+.menu li a:hover{
+	color: #FFF;
+}
+/*Search*/
+.searchicon {
+	color: #FFF;
+	float: right;
+	z-index: 99999;
+	font-size: 14px;
+	line-height: 16px;
+	position: absolute;
+	top: 6px;
+	right: 12px;
+	cursor: pointer;
+}
+#searchform {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	display: none;
+}
+#s {
+	color: #FFF;
+	width: 160px;
+	line-height: 20px;
+	padding: 6px 12px;
+	background: rgba(0,0,0,.5);
+	border: 0;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+/*Post meta*/
+
+.post{
+	padding: 50px 50px;
+}
+.post p {
+	color: #000;
+	font-size: 16px;
+	line-height: 2em;
+	text-align: left;
+	text-indent: 0;
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.content p a {
+	text-decoration: underline;
+}
+
+.entrytitle {
+	font-weight: lighter;
+	color: #000;
+	text-align: center;
+}
+.entrytitle a {
+	font-size: 40px;
+	line-height: 60px;
+	font-weight: lighter;
+	color: #000;
+	/*color: rgba(0,0,0,0.6);*/
+	transition: all 0.5s ease-in;
+}
+.postmeta{
+	text-align: center !important;
+	color: #000;
+	font-size: 12px;
+	line-height: 22px;
+	padding: 40px 0;
+}
+p.more {
+	text-align: center !important;
+	margin-top: 20px;
+}
+a.continue {
+	color:#FFF !important;
+	text-decoration: none !important;
+	display: inline-block;
+	padding: 6px 12px;
+	background: #000;
+	margin: 10px auto;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+a.continue:hover {
+	padding: 6px 20px;
+}
+/*Blockquote*/
+blockquote{
+	font-size: 15px;
+	width: auto;
+	margin: 20px 5%;
+	padding: 30px 40px;
+	line-height: 2;
+	background: rgba(255,255,255,0.1);
+	border-left: 8px solid rgba(0,0,0,0.1);
+}
+.footerlink {
+	text-align: center;
+}
+.footerlink a{
+	display: inline-block;
+	font-weight: lighter;
+	font-size: 16px;
+	margin: 10px 20px;
+	border-bottom: 1px dotted transparent;
+}
+.footerlink a:hover{
+	border-bottom: 1px dotted #000;
+}
+
+/*Footer*/
+#footer {
+	line-height: 2em;
+	overflow: hidden;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+#footer,#footer p{
+	font-size: 12px;
+	line-height: 2em;
+	color: #000;
+	text-align: center;
+}
+#footer p {
+	padding-bottom: 10px;
+}
+#footer a {
+	font-size: 12px;
+	line-height: 2em;
+	color: #000;
+}
+.commentsresponsive {
+	padding: 50px;
+}
+#fb_new_comment textarea {
+	padding:15px 7px;
+	color:#999;
+	border:none !important;
+	border-radius: 0 !important;
+	border-style: none;
+}
+.input_body ul li input {
+	background: #FFF !important;
+	border: none !important;
+	border-radius: 0  !important;
+	border-bottom: 1px solid transparent !important;
+}
+.input_body ul li input:focus {
+	border-bottom: 1px solid transparent !important;
+}
+
+#fb_new_comment .c_button, #fb_new_comment #c_submit{
+	font-family: "STHeiti Light","Microsoft YaHei","Microsoft JhengHei",STHeiti,MingLiu;
+	font-size: 18px !important;
+	color: #FFF !important;
+	background: #000 !important;
+	padding: 10px 20px !important;
+	border-radius: 0 !important;
+	border: 2px solid #000 !important;
+	transition: all 0.3s ease-in;
+}
+#fb_new_comment .c_button:hover, #fb_new_comment #c_submit:hover {
+	color: #000 !important;
+	background: transparent !important;
+}
+
+
+
+/*滚动栏*/
+    ::-webkit-scrollbar {
+    	width: 10px;
+    	height: 10px;
+    	background-color: #000;
+    }   
+    ::-webkit-scrollbar-track-piece {
+    	background-color: #000;
+    }   
+    ::-webkit-scrollbar-thumb {
+    	height: 10px;
+    	background-color:  #FFF;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+	height: 10px;
+	background-color:  #FFF;
+}
+/*Background Color*/
+::selection{
+	background: #000;
+	color: white;
+	/* Safari */
+}
+::-moz-selection{
+	background: #000;
+	color: white;
+	/* Firefox */
+}
+
+
+	/* for 480px or less */
+	@media screen and (max-width:720px) {
+	body{
+	background-image: none;
+	padding: 0;
+	}
+	#site {
+		padding: 0;
+		margin: 0;
+		width: auto;
+	}
+	#banner{
+		height: auto;
+		padding: 30px 20px;
+		background: url(../images/mobile-blur.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	.post {
+		padding: 30px;
+		background: none;
+	}
+	.post img{
+		max-width: 94%;
+	}
+	.input_body ul li  {
+		float: none !important;
+	}
+}
+
